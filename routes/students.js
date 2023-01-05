@@ -91,7 +91,7 @@ module.exports = async (fastify, opts) => {
 
     //UPDATE the student data
 
-    fastify.update('/update', async function(request, reply){
+    fastify.put('/update', async function(request, reply){
 
         const {id } = request.params
         const name = {...request.body}
